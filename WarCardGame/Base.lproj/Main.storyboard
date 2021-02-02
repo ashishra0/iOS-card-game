@@ -39,6 +39,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFs-1f-XAd" userLabel="Deal button">
                                         <rect key="frame" x="94" y="200" width="82" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmQ-Z3-w90"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -94,6 +97,12 @@
                             <constraint firstAttribute="trailing" secondItem="zIr-aZ-q4t" secondAttribute="trailing" id="zKU-WA-a5K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="cS7-LV-VbC" id="57K-n7-B8A"/>
+                        <outlet property="leftScoreLabel" destination="HSi-Xa-sH9" id="YsL-lx-qwa"/>
+                        <outlet property="rightImageView" destination="hwR-fr-czG" id="Tg9-mJ-n1m"/>
+                        <outlet property="rightScoreLabel" destination="xoH-2u-Hck" id="hLA-oV-gKE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
